@@ -1,0 +1,16 @@
+# Relative links only. External URLs rot for reasons unconnected to this repository, and a
+# check that goes red for someone else's downtime is one people learn to disbelieve.
+
+name: links
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: chohan-sarmad-ali/delivery-gates/link-check@v1
