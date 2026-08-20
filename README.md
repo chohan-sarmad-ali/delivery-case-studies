@@ -1,6 +1,6 @@
 # Delivery case studies
 
-Four delivery problems, and what was actually done about them.
+Five delivery problems, and what was actually done about them.
 
 Each describes the **approach**, not the internals — the systems are private, the mechanics
 transfer. Every claim traces to a real artifact: a spec, a CI job, a committed document.
@@ -14,6 +14,7 @@ Anything that could not be evidenced was cut rather than softened.
 | 2 | [Encoding the integrity claim as a merge gate](02-linting-the-claim.md) | A product's central honesty claim decays under ordinary pressure | A CI linter on every diff — where the exemptions matter more than the rules |
 | 3 | [Deciding what not to build](03-deciding-what-not-to-build.md) | Nine reasonable "could it also…"s kill a schedule | Written refusals, each with its reason attached |
 | 4 | [Fixed scope, and a handover with a hole in it](04-fixed-scope-clean-handover.md) | Handover quality tracks urgency, not importance | What the deployment runbook got right, and the document that was never written |
+| 5 | [Least privilege as an import contract](05-least-privilege-as-an-import-contract.md) | An agent with tool access has the blast radius of a badly scoped IAM role | A single-egress import contract in CI, a static gate for the gap the contract cannot see, and a human gate on what leaves |
 
 ---
 
